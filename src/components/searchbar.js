@@ -13,7 +13,13 @@ import React, { Component } from 'react';
 class SearchBar extends Component {
     // all componenets must have a render method
     render() {
-        return <input />;
+        return <input onChange={this.onInputChange} />;
+    }
+
+    //event handling
+    onInputChange(event) {
+        console.log(event.target.value);
+        
     }
 }
 
