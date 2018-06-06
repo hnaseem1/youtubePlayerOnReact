@@ -18,8 +18,8 @@ const App = () => {
             <SearchBar />
 
 
-            {/* <VideoDetail /> */}
-            {/* <VideoList /> */}
+            <VideoDetail />
+            <VideoList />
         </div>
 
 
