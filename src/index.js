@@ -1,10 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import SearchBar from './components/searchbar';
+
+const API_KEY = [PROTECTED]
+const parentNode = document.querySelector('.container')
+
+
 // create a new component
 // some HTML
-const parentNode = document.querySelector('.container')
+
 const App = () => {
-    return <div>Hi</div>;
+    return (
+        
+        <div>
+            <SearchBar />
+        </div>
+    );
 }
 // Take this componenets generated HTML and put it
 // on the page (in the DOM)
