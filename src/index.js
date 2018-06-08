@@ -3,11 +3,11 @@ import ReactDOM from 'react-dom';
 import SearchBar from './components/searchbar';
 import VideoDetail from './components/video_detail';
 import VideoList from './components/video_list';
-const API_KEY = [PROTECTED]
+const API_KEY = "asfjf"
 const parentNode = document.querySelector('.container')
 
 
-// create a new component
+// create a new component   
 // some HTML
 
 // functional componenet
