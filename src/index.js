@@ -5,7 +5,7 @@ import SearchBar from './components/searchbar';
 import VideoDetail from './components/video_detail';
 import VideoList from './components/video_list';
 
-const API_KEY = "asfjf"
+const API_KEY = "API_KEY"
 const parentNode = document.querySelector('.container')
 
 // class-based componenet
@@ -28,6 +28,7 @@ class App extends Component {
 
         <div>
             <SearchBar />
+            <VideoList videos={this.state.videos} />
         </div>
 
     );
