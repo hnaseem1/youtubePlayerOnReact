@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 
 // const VideoListItem = () => {
@@ -9,14 +9,9 @@ import React, { Component } from 'react';
 //     );
 // };
 
-class VideoListItem extends Component {
-   render () {
-       return (
-        <div>
-            Random VideoListItem
-        </div>
-       );
-   }
+const VideoListItem = (props) => {
+
+       return <li> video </li>
 }
 
 // makes it available for other components
