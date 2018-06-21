@@ -8,7 +8,7 @@ import VideoList from './components/video_list';
 const API_KEY = "asfjf"
 const parentNode = document.querySelector('.container')
 
-// functional componenet
+// class-based componenet
 class App extends Component {
 
     constructor(props) {
