@@ -4,8 +4,14 @@ const VideoDetail = (props) => {
 
   // also use {video} in place of props above which means props.video
   const video = props.video;
-  const videoID = video.snippet.videoId;
-  const videoUrl = `https://www.youtube.com/ember/${videoId}`;
+
+  if (!video) {
+    return <div>Loading...</div>
+  }
+
+  const videoId = video.id.videoId;
+  const videoUrl = `https://www.youtube.com/embed/${videoId}`;
+
 
   return (
 
