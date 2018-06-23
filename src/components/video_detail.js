@@ -1,24 +1,25 @@
 import React, { Component } from 'react';
 
 
-// const VideoDetail = () => {
-//     return (
-//         <div> 
-//             Random VideoDetail
-//         </div>
-//     );
-// };
+const VideoDetail = (props) => {
 
-class VideoDetail extends Component {
-    render() {
-        return (
-            <div>
-                Random VideoDetail
-            </div>
-        );
-    }
-}
+  // also use {video} in place of props above which means props.video
+  const video = props.video;
+  const videoID = video.snippet.videoId;
 
+  return (
 
-// makes it available for other components
+      <div className='video-detail col-md-8'>
+        <div className='embed-responsive embed-responsive-16by9'>
+          <iframe className='embed-responsive-item'></iframe>
+        </div>
+        <div className='details'>
+          <div>{video.snippet.title}</div>
+          <div>{video.snippet.description}</div>
+        </div>
+      </div>
+
+    );
+};
+
 export default VideoDetail;
