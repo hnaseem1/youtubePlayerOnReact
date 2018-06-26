@@ -17,7 +17,7 @@ const VideoListItem = (props) => {
           <div className = 'media-body'>
             <div className = 'media-heading'> {videoTitle} </div>
           </div>
-
+          
         </div>
       </li>
     </div>
