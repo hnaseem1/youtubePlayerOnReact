@@ -7,20 +7,20 @@ const VideoListItem = (props) => {
   const videoTitle = video.snippet.title
 
   return (
+    <div>
+      <li className = ''>
+        <div className = 'video-list media'>
+          <div className = 'media-left'>
+            <img className = 'media-object' src = {videoUrl} />
+          </div>
 
-    <li className = 'list-group-item'>
-      <div className = 'video-list media'>
-        <div className = 'media-left'>
-          <img className = 'media-object' src = {videoUrl} />
+          <div className = 'media-body'>
+            <div className = 'media-heading'> {videoTitle} </div>
+          </div>
+
         </div>
-
-        <div className = 'media-body'>
-          <div className = 'media-heading'> {videoTitle} </div>
-        </div>
-
-      </div>
-    </li>
-
+      </li>
+    </div>
   );
 }
 
