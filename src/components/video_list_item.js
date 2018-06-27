@@ -5,10 +5,11 @@ const VideoListItem = (props) => {
   const video = props.video
   const videoUrl = video.snippet.thumbnails.default.url
   const videoTitle = video.snippet.title
+  const onVideoSelect = props.onVideoSelect
 
   return (
     <div>
-      <li className = ''>
+      <li onClick={() => onVideoSelect(video)} className = ''>
         <div className = 'video-list media'>
           <div className = 'media-left'>
             <img className = 'media-object' src = {videoUrl} />
@@ -17,7 +18,7 @@ const VideoListItem = (props) => {
           <div className = 'media-body'>
             <div className = 'media-heading'> {videoTitle} </div>
           </div>
-          
+
         </div>
       </li>
     </div>
